@@ -29,7 +29,7 @@ if a=='y':
         if belgi[j] in chars:
             de_index=chars.index(belgi[j])
             ke_index=chars.index(key[j%len(key)])
-            desh_index=(de_index-ke_index)%len(chars)
+            desh_index=(de_index-ke_index+len(chars))%len(chars)
             deshifr+=chars[desh_index]            
         else:
             deshifr+=belgi[j]            
